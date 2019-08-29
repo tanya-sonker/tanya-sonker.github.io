@@ -1,0 +1,32 @@
+	/* resume button */
+	.btn {
+	  background-color: #ffe6f3;
+	  border: none;
+	  color: #660066;
+	  padding: 12px 30px;
+	  cursor: pointer;
+	  font-size: 17px;
+	  text-align: center;
+	  font-family: Arial;
+	}
+
+	.btn:hover {
+	  background-color: #df9fdf;
+	  color: white;
+	}
+
+	
+	div.container {
+		margin: 15% auto;
+		width: 50%;
+		font-family: Arial;
+	}
+
+	#profile{
+		/*top right bottom left */
+		/*margin: 0% 10% 10% 70%;*/
+		margin: 5% 10%;
+		border-radius: 10 px / 15 px;
+		width: 20%;
+		float: right;
+	}
