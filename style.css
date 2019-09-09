@@ -4,6 +4,10 @@
 	  	border: none;
 	}
 
+	.navbar .navbar-toggler{
+		border-color: white;
+		color: white;
+	}
 /* important to remove hover */
 	.navbar-brand{
 		color: white !important;
