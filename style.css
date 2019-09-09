@@ -1,3 +1,116 @@
+	.navbar{
+		background-color: rgb(164, 102, 139);
+		/* rgb(164, 102, 160); */
+	  	border: none;
+	}
+
+/* important to remove hover */
+	.navbar-brand{
+		color: white !important;
+		position: relative;
+	}
+
+/* underline on hover */
+/* https://codepen.io/maheshambure21/pen/QwXaRw */
+
+	.collapse ul.navbar-nav>li>a{
+		color: white;
+	}
+
+	.collapse ul.stroke>li>a{
+		position: relative;
+	}
+
+	.collapse ul.stroke>li>a:after{
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  margin: auto;
+		  width: 0%;
+		  content: '.';
+		  color: transparent;
+		  background: #aaa;
+		  height: 1px;
+	}
+
+	.collapse ul.stroke>li>a:hover:after{
+		width: 100%;
+	}
+
+
+/*HEADER*/
+	.header{
+		background-image: url('header.jpg');
+		 background-attachment: fixed;
+		 background-size: cover;
+		 background-position: center;
+	}
+
+/*might not need?*/
+	.overlay{
+	 position: absolute;
+	 min-height: 100%;
+	 min-width: 100%;
+	 left: 0;
+	 top: 0;
+	 /*background: rgba(244, 244, 244, 0.2);*/
+	 /*background: rgba(244, 244, 244, 0.79);*/
+	}
+
+
+	.description{
+		    position: absolute;
+		    top: 40%;
+		    left: 5%;
+		    margin: auto;
+		    padding: 2em;
+		    color: white;
+		    background: rgba(0, 0, 0, 0.65) ;
+	}
+
+/*	.location{
+			top: 40%;
+		    left: 5%;
+		    margin: auto;
+		    padding: 2em;
+		    color: white;
+		    background: rgba(0, 0, 0, 0.65) ;
+	}*/
+
+/*ABOUT*/
+	.about{
+		 margin: 4em 0;
+		 padding: 1em;
+		 position: relative;
+	}
+
+	/*.about .image{
+		background-color: yellow;
+	}*/
+	.about img{
+		height: 100%;
+		width: 100%;
+		border-radius: 10%; 
+		/*50% for circle*/
+		/*background-color: red;*/
+	}
+
+	.about .desc{
+		padding: 2em;
+		border-left: 4px solid rgb(0,0,0, 0.3);
+	}
+
+	.about .desc h1{
+		color: rgb(0,0,0, 0.8);
+	}
+
+	.about .desc p{
+		 line-height:2;
+		 color:rgb(0,0,0, 0.5);
+		}
+
+ /*CONTAINER */
 	/* resume button */
 	.btn {
 	  background-color: #ffe6f3;
@@ -30,3 +143,21 @@
 		width: 20%;
 		float: right;
 	}
+
+
+/*FOOTER*/
+.footer{
+	margin-bottom:0;
+	background-color: rgb(164, 102, 139, 0.9);
+}
+
+.footer #connect{
+	font-size: 25px;
+	color: white;
+}
+
+.footer #copyright{
+	font-size: 15px;
+	text-align: right;
+	color: white;
+}

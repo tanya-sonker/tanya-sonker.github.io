@@ -20,26 +20,90 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- JQuery -->
+	<script type="text/javascript" src='main.js'></script>
+
+
+	<!-- FONT AWESOME -->
+	<!-- <script src="https://kit.fontawesome.com/504d9a3113.js"></script> -->
 </head>
 
 <body>
 <div>
 
-<div class="container">
-<div>	
-	<img id="profile" src="Tanya.JPG">
-	<h1>Tanya Sonker</h1>
-		
-		<p> Senior at Santa Clara University studying Computer Science and Mathematics.</p>
+<!-- NAVBAR -->
+<!-- expands on small; dark theme; stays on top -->
+<!-- bg-dark navbar-dark -->
+<nav class="navbar navbar-expand-sm  fixed-top">
+	<a class="navbar-brand" href="#">Tanya Sonker</a>
 
-		<p>Seeking full-time Software Engineer opportunities in June 2020.</p>
-		<p>Interested in building technology for social benefit.</p>
+	  <!-- Toggler/collapsibe Button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    	<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <!-- links to collapse; justify-content-end aligns to right -->
+	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		<ul class="navbar-nav stroke">
+			<li class="navbar-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#work">Work Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link"href="#media">Media</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
 	</div>
-				<!-- download properties allows for file to be downloadable -->
-					<a href="Resume_Aug2019.pdf" download>
-						<button class="btn"><i class="fa fa-download" href="Resume_Aug2019.pdf"></i>  Resume</button>
-					</a>
+</nav>
 
+<!-- HEADER -->
+<header class="header">
+	<div class="overlay"></div>
+	<div class="description">
+		<h1>Hey! I'm Tanya Sonker.</h1>
+		<p> Student | Engineer | Computer Musician </p>
+		<a href="#about"><button class="btn">Learn More</button></a>
+	</div>
+<!-- 	<div class="location">
+		<p>
+			<a href="https://ccrma.stanford.edu/" target="_blank"><i class="fas fa-map-marker-alt"></i> CCRMA</a> , Stanford University
+		</p>
+	</div> -->
+</header>
+
+<!-- ABOUT --> 
+<div class="row about" id="about">
+	<!-- left -->
+	<div class="col-lg-4 col-md-4 col-sm-12 image">
+    	<img src="Tanya.JPG" class="img-fluid">
+	</div>
+    <!-- right -->
+    <div class="col-lg-8 col-md-8 col-sm-12 desc" >
+    	<h1 align="center">About</h1>
+    	<p> Thanks for stopping by! I'm a senior at Santa Clara University studying Computer Science and Mathematics. Here, I'm a Teaching Assistant for introductory Computer Science courses. I'm also going to be a Teaching Assistant for Santa Clara Laptop Orchestra this winter quarter (2020) </p>
+
+    	<p>I'm currently seeking full-time Software Engineering opportunities starting June 2020. I'm interested in building technology for social benefit.</p>
+
+    	<p>I spent most of my summer overhauling an open-source project to build an e-commerce website for a container security startup in stealth mode. I learned the importance of cloud infrastructure and scalability. I also learned how I learn -- under minimal supervision with the freedom to explore and resources to approach once I've attempted to solve the problem at hand.</p>
+
+    	<p>Earlier this year, I created and conducted a sound design workshop at R F Elementary School. I conducted the workshop with no music equipment -- just a laptop. I'm hoping to scale the workshop to multiple schools now! Last year, I built a Little Free Library with a team of two for Rocketship Mosaic Elementary School -- they didn't have a library before this.</p>
+    	
+    	<p>Other that that, I have been immersed in the computer music space. As a Computer Musician for the Santa Clara Laptop Orchestra, I live-code and perform algorithmic music compositions. Our most recent gigs were at Stanford's CCRMA and Dolby Headquarters!</p>
+    	</ul>
+    </div>
+ </div>
+
+
+<!-- FOOTER -->
+<div class="jumbotron text-center footer" id="contact">
+	<p id="connect">Let's connect! <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+  	<div class="social-media">
 			<!-- throw https before URL otherwise will re-route to www.github.com/tanya-sonker/github.io/www.linked.com/in/tanya-sonker" -->			
 			  <a href="https://www.linkedin.com/in/tanya-sonker" target="_blank" class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin" href="www.linked.com/in/tanya-sonker"></span>
 	  		  </a>
@@ -50,6 +114,15 @@
 	  		  <a href="mailto:tsonker@scu.edu" class="btn btn-email">
 	    	  	<span class="fa fa-envelope"></span>
 	  		  </a>
-</div>		
+	</div>
+	<p id="copyright"><i class="fa fa-copyright"></i> Tanya Sonker (2019)</p>
+</div>
+<!-- 
+//download properties allows for file to be downloadable
+					<a href="Resume_Aug2019.pdf" download>
+						<button class="btn"><i class="fa fa-download" href="Resume_Aug2019.pdf"></i>  Resume</button>
+					</a>
+-->
+<!-- BODY -->
 </body>
 </html>
