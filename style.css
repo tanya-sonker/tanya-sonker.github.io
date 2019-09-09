@@ -188,7 +188,14 @@ hr{
 	background-color: rgb(164, 102, 139, 0.6);
 }
 
+.card-deck p{
+	color: rgb(0,0,0, 0.6);
+}
 
+/*MEDIA*/
+.card-group p{
+	color: rgb(0,0,0, 0.6);
+}
 
 
 
