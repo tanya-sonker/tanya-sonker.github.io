@@ -1,6 +1,9 @@
+/* navbar */	
+	.navbar-default{
+		margin: 0 !important;
+	}
 	.navbar{
-		background-color: rgb(164, 102, 139);
-		/* rgb(164, 102, 160); */
+		background-color: #7F7888;
 	  	border: none;
 	}
 
@@ -8,16 +11,15 @@
 		border-color: white;
 		color: white;
 	}
-/* important to remove hover */
+
 	.navbar-brand{
 		color: white !important;
 		position: relative;
 	}
 
-/* underline on hover */
-/* https://codepen.io/maheshambure21/pen/QwXaRw */
-
 	.collapse ul.navbar-nav>li>a{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-weight: bold;
 		color: white;
 	}
 
@@ -34,7 +36,7 @@
 		  width: 0%;
 		  content: '.';
 		  color: transparent;
-		  background: #aaa;
+		  background: #FFFFFF;
 		  height: 1px;
 	}
 
@@ -42,209 +44,118 @@
 		width: 100%;
 	}
 
-
-/*HEADER*/
-	.header{
-		background-image: url('header.jpg');
-		 background-attachment: fixed;
-		 background-size: cover;
-		 background-position: center;
+/* home page */
+	.profile {
+		margin-top: 25%;
+		height: 250px;
+		width: 250px;
+		object-fit: contain;
 	}
 
-/*might not need?*/
-	.overlay{
-	 position: absolute;
-	 min-height: 100%;
-	 min-width: 100%;
-	 left: 0;
-	 top: 0;
-	 /*background: rgba(244, 244, 244, 0.2);*/
-	 /*background: rgba(244, 244, 244, 0.79);*/
+	.stanford {
+		margin-left: 1.6%;
+		height: 120%;
+		max-width: 129%;
+		object-fit: fill;
 	}
 
-
-	.description{
-		    position: absolute;
-		    top: 40%;
-		    left: 5%;
-		    margin: auto;
-		    padding: 2em;
-		    color: white;
-		    background: rgba(0, 0, 0, 0.65) ;
+	.homelhs, .aboutrhs, .exprhs > ul, p {
+		color: #7F7888;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 1.2vw;
 	}
 
-/*	.location{
-			top: 40%;
-		    left: 5%;
-		    margin: auto;
-		    padding: 2em;
-		    color: white;
-		    background: rgba(0, 0, 0, 0.65) ;
-	}*/
-
-/*ABOUT*/
-	.about{
-		 margin: 4em 0;
-		 padding: 1em;
-		 position: relative;
+	.homelhs #name{
+		margin-top: 5%;
+		margin-left: 4.5%;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 2.5vw;
 	}
 
-	/*.about .image{
-		background-color: yellow;
-	}*/
-	.about img{
-		height: 100%;
+	.homelhs #pronouns{
+		margin-left: 12%;
+		font-size: 1.2vw;
+	}
+
+	#resume {
+		margin-left: 2%;
+		margin-top: 8%;
+		margin-bottom: 0;
+	}
+
+/* about page */
+	.aboutrhs #hello{
+		margin-top: 15%;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 2.5vw;
+	}
+
+	.aboutrhs > ul > p {
+		margin-left: -8%;
+		margin-bottom: 0;
+	}
+
+	.aboutrhs > ul > li {
+		margin-left: -2%
+	}
+
+/* experience and contact page */
+	.explhs > img{
+		margin-top: 15%;
+		height: 80%;
+		width: 80%;
+		object-fit: contain;
+	}
+
+	.explhs, .exprhs > p, span {
+		color: #7F7888;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+	
+	.exprhs #ewo, #sclork {
+		margin-top: 15%;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 2.5vw;
+	}
+
+	.explhs #ewoweb, #quneo, #kupcakeshop, #sclork2020, #groceryhelper, #lfl {
+		margin-top: 15%;
+		margin-left: -15%;
 		width: 100%;
-		border-radius: 10%; 
-		/*50% for circle*/
-		/*background-color: red;*/
+		height: 80%;
 	}
 
-	.about .desc{
-		padding: 2em;
-		border-left: 4px solid rgb(0,0,0, 0.3);
+	.exprhs #posloc {
+		text-align: left;
+	}
+	.exprhs #timeline {
+		float: right;
 	}
 
-	.about .desc h1{
-		color: rgb(0,0,0, 0.8);
+	.exprhs > ul > li {
+		margin-left: -2%
 	}
 
-	.about .desc p{
-		 line-height:2;
-		 color:rgb(0,0,0, 0.5);
-		}
-
-
-/*RESUME*/
-
-.resume {
-	background-color: rgb(164, 102, 139, 0.9);
-}
-
-.resume>p{
-	font-size: 12px;
-	color: white;
-}
-
-
-/*WORK EXPERIENCE*/
-
-/*.work0 .left-0{
-	background-color: rgb(164, 102, 139, 0.1);
-}*/
-
-.work0 .left-0>ul{
-	color: rgb(0,0,0, 0.6);
-	padding-left: 10%;
-}
-
-.work0 .left-0>h3, h6{
-	color:rgb(0,0,0, 0.6);
-	padding-left: 5%;
-}	
-
-.work0 img{
-	width: 80%;
-	height: 90%;
-}
-
-.work .left-1>ul{
-	color: rgb(0,0,0, 0.6);
-	padding-left: 10%;
-}
-
-.work .left-1>h3, h6{
-	color:rgb(0,0,0, 0.6);
-	padding-left: 5%;
-}	
-
-.work1 .left-2>ul{
-	color: rgb(0,0,0, 0.6);
-	padding-left: 10%;
-}
-.work1 .left-2>h3, h6{
-	color:rgb(0,0,0, 0.6);
-	padding-left: 5%;
-}
-
-.work .right-1{
-	background-color: rgb(164, 102, 139, 0.3);
-}
-.work img{
-	width: 100%;
-	height: 100%;
-}
-
-.work2 .left-2>ul{
-	color: rgb(0,0,0, 0.6);
-	padding-left: 10%;
-}
-
-.work2 .left-2>h3, h6{
-	color:rgb(0,0,0, 0.6);
-	padding-left: 5%;
-}
-
-.work2 img{
-	width: 100%;
-	height: 100%;
-}
-
-/*ENGINEERING PROJECTS*/
-
-.proj-header h1 .text-muted{
-	font-size: 20px;
-}
-
-hr{
-	width: 35%;
-	border-width: 1px;
-	background-color: rgb(164, 102, 139, 0.6);
-}
-
-.card-deck p{
-	color: rgb(0,0,0, 0.6);
-}
-
-/*MEDIA*/
-.card-group p{
-	color: rgb(0,0,0, 0.6);
-}
-
-
-
-
- /* CONTAINER */
-	/*  button */
-	.btn {
-	  background-color: #ffe6f3;
-	  border: none;
-	  color: #660066;
-	  padding: 12px 30px;
-	  cursor: pointer;
-	  font-size: 17px;
-	  text-align: center;
-	  font-family: Arial;
+	.contlhs #scudoc {
+		margin-top: 15%;
+		margin-left: -15%;
+		width: 100%;
+		height: 80%;	
 	}
 
-	.btn:hover {
-	  background-color: #df9fdf;
-	  color: white;
+	.contlhs #sclorkdoc {
+		margin-top: 5%;
+		margin-left: -15%;
+		width: 100%;
+		height: 90%;	
 	}
 
-/*FOOTER*/
-.footer{
-	margin-bottom:0;
-	background-color: rgb(164, 102, 139, 0.9);
-}
-
-.footer #connect{
-	font-size: 25px;
-	color: white;
-}
-
-.footer #copyright{
-	font-size: 15px;
-	text-align: right;
-	color: white;
-}
+	.exprhs #cont {
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 2.5vw;
+		margin-top: 0;
+	}
