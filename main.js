@@ -1,4 +1,3 @@
-/* $(document).ready(function(){
- $('.header').height($(window).height());
- 
-}) */
+function changeImage(image) {
+        image.src = "images/blu.png";
+}
