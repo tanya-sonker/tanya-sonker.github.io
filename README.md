@@ -2,7 +2,7 @@
 
 ### Stack
 HTML, CSS, JavaScript, and Bootstrap v5.3. 
-Working on implementing as an Angular SPA.
+Implementing as an Angular SPA (WIP).
 
 ### Install
 Installable as a PWA through Google Chrome and Safari on iOS and Android. Converted with [Workbox](https://developer.chrome.com/docs/workbox).
