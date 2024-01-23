@@ -4,7 +4,7 @@
 HTML, CSS, JavaScript, and Bootstrap v5.3. 
 
 ### Install
-Installable as a PWA on Google Chrome. Converted with [Workbox](https://developer.chrome.com/docs/workbox).
+Installable as a PWA through Google Chrome and Safari on iOS and Android. Converted with [Workbox](https://developer.chrome.com/docs/workbox).
 
 ### Deployment
 Learn more about deploying via GitHub pages and connecting to a custom domain through my Medium [article](https://medium.com/@tanyasonker/personal-website-101-for-developers-31fa6b0f500a).
