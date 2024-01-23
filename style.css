@@ -3,7 +3,7 @@
 		margin: 0 !important;
 	}
 	.navbar{
-		background-color: #7F7888;
+		background-color: #5D445F;
 	  	border: none;
 	}
 
@@ -69,7 +69,7 @@
 	}
 
 	.homelhs, .aboutrhs, .exprhs > ul, p {
-		color: #7F7888;
+		color: #5D445F;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		/* font-size: 1.2vw; */
 		font-size: calc(0.7vw + 0.5rem);
@@ -125,7 +125,7 @@
 	}
 
 	.explhs, .exprhs > p, span {
-		color: #7F7888;
+		color: #5D445F;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
 	
