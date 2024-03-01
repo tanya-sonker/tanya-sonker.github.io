@@ -1,6 +1,10 @@
-function changeImage(image) {
-        image.src = "images/blu.png";
-}
+const myImg = document.getElementById("myImg");
+let isGradPic = true;
+
+myImg.addEventListener("click", () => {
+  myImg.src = isGradPic ? "images/blu.png" : "images/grad.png";
+  isGradPic = !isGradPic;
+});
 
 /*
 create 2 files -> light.css, dark.css
