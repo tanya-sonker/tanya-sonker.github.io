@@ -71,8 +71,9 @@
 
 	.stanford {
 		height: 50vw;
+		width: 100vw;
 		padding-top: 10px;	
-		object-fit: fill;
+		object-fit: cover;
 	}
 
 	.homelhs, .aboutrhs, .exprhs > ul, p {
