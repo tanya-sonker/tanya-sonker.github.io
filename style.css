@@ -137,7 +137,7 @@
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
 	
-	.exprhs #ewo, #sclork {
+	.exprhs #dbiz, #ewo, #sclork {
 		margin-top: 15%;
 		margin-bottom: 0;
 		font-weight: bold;
@@ -150,6 +150,11 @@
 	}
 	.explhs #ewoweb, #quneo, #kupcakeshop, #sclork2020, #groceryhelper, #lfl {
 		width: 100%;
+		height: 80%;
+	}
+
+	.explhs #dbizjob {
+		width: 80%;
 		height: 80%;
 	}
 
