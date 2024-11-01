@@ -1,6 +1,6 @@
 {
-  "name": "Tanya's Portfolio",
-  "short_name": "Portfolio",
+  "name": "tanya.tsx",
+  "short_name": "PWA",
   "start_url": "/",
   "icons": [
       {
