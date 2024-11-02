@@ -18,6 +18,8 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { useContext } from "react";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import logoLight from "../../assets/images/kuromi-light.png";
+import logoDark from "../../assets/images/kuromi-dark.png";
 
 const navItems = ["home", "about", "experience", "contact"];
 const navLinks = ["/", "/about", "/experience", "/contact"];
@@ -39,9 +41,23 @@ export default function Navbar() {
       onClick={handleDrawerToggle}
       className={isDarkMode ? "navbar-drawer-dark" : "navbar-drawer-light"}
     >
-      <p className={isDarkMode ? "navbar-text-dark" : "navbar-text-light"}>
-        Logo
-      </p>
+      <Box sx={{ flexGrow: 1 }}>
+        <NavLink to={"/"}>
+          {isDarkMode ? (
+            <img
+              src={logoDark}
+              alt="Logo Dark Mode"
+              style={{ width: "60px", height: "60px", cursor: "pointer" }}
+            />
+          ) : (
+            <img
+              src={logoLight}
+              alt="Logo Light Mode"
+              style={{ width: "60px", height: "60px", cursor: "pointer" }}
+            />
+          )}
+        </NavLink>
+      </Box>
       <Divider />
       <List>
         {navItems.map((item, index) => (
@@ -84,11 +100,21 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Box sx={{ flexGrow: 1 }}>
-            <div
-              className={isDarkMode ? "navbar-text-dark" : "navbar-text-light"}
-            >
-              Logo
-            </div>
+            <NavLink to={"/"}>
+              {isDarkMode ? (
+                <img
+                  src={logoDark}
+                  alt="Logo Dark Mode"
+                  style={{ width: "60px", height: "60px", cursor: "pointer" }}
+                />
+              ) : (
+                <img
+                  src={logoLight}
+                  alt="Logo Light Mode"
+                  style={{ width: "60px", height: "60px", cursor: "pointer" }}
+                />
+              )}
+            </NavLink>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block", gap: 1 } }}>
             {navItems.map((item, index) => (
