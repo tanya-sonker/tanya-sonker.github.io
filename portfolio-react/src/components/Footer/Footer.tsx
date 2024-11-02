@@ -1,88 +1,43 @@
 import "./Footer.css";
+import socialLinks from "../../utils/socialLinks";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
+import { ThemeContext } from "../../context/ThemeContext";
+import { useContext } from "react";
 
-const Footer: React.FC = () => (
-  <footer className="footer">
-    <Divider></Divider>
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid size={4}>
-          <p className="date">last updated 10/24</p>
+export default function Footer() {
+  const themeContext = useContext(ThemeContext);
+  if (!themeContext) throw new Error("ThemeContext not found");
+
+  const { isDarkMode, toggleTheme } = themeContext;
+
+  return (
+    <footer className="footer">
+      <Divider />
+      <Box sx={{ flexGrow: 1, p: 2 }}>
+        <Grid container spacing={2} alignItems="center">
+          <Grid size={{ xs: 12, sm: 4 }}>
+            <p className="date">last updated 10/24</p>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 8 }} container justifyContent="flex-end">
+            <Box className="socials" sx={{ display: "flex", gap: 2 }}>
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  aria-label={`Contact Tanya via ${link.label}`}
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  <i className={`${link.icon} ${isDarkMode ? "social-icon-dark" : "social-icon-light"}`}></i>
+                </a>
+              ))}
+            </Box>
+          </Grid>
         </Grid>
-        <Grid size={8}>
-          <div className="socials">
-            <a
-              href="https://www.linkedin.com/in/tanya-sonker/"
-              target="_blank"
-              aria-label="Follow Tanya on LinkedIn"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-linkedin"></i>
-              </span>
-            </a>
-
-            <a
-              href="https://www.github.com/tanya-sonker/"
-              target="_blank"
-              aria-label="Follow Tanya on GitHub"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-github"></i>
-              </span>
-            </a>
-
-            <a
-              href="mailto:tsonker98@gmail.com"
-              target="_blank"
-              aria-label="Email Tanya"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-envelope-at"></i>
-              </span>
-            </a>
-
-            <a
-              href="https://www.instagram.com/tanya.tsx/"
-              target="_blank"
-              aria-label="Follow Tanya on Instagram"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-instagram"></i>
-              </span>
-            </a>
-
-            <a
-              href="https://poeticalscience.substack.com/"
-              target="_blank"
-              aria-label="Follow Tanya on Substack"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-substack"></i>
-              </span>
-            </a>
-
-            <a
-              href="https://medium.com/@tanyasonker/"
-              target="_blank"
-              aria-label="Follow Tanya on Medium"
-              className="text-decoration-none"
-            >
-              <span>
-                <i className="bi bi-medium"></i>
-              </span>
-            </a>
-          </div>
-        </Grid>
-      </Grid>
-    </Box>
-  </footer>
-);
-
-export default Footer;
+      </Box>
+    </footer>
+  );
+}
