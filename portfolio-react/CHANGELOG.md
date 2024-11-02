@@ -3,4 +3,5 @@
 - Can be installed as a PWA
 ## 2.0.0 (Nov 3, 2024)
 - Single-page application in React (TypeScript) with components, pages, and routes
+- Can be toggled between light and dark modes
 - Can be installed as a PWA
