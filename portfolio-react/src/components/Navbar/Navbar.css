@@ -1,0 +1,41 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+}
+
+/* AppBar background*/
+.navbar-appbar-light {
+  background-color: #ffffff !important;
+}
+.navbar-appbar-dark {
+  background-color: #121212 !important;
+}
+
+/* Common text color for logo, buttons, and icons*/
+.navbar-text-dark,
+.navbar-text-light {
+  text-decoration: none;
+  text-transform: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: bold;
+}
+.navbar-text-light {
+  color: #5d445f !important;
+}
+.navbar-text-dark {
+  color: #cdbace !important;
+}
+
+/* Drawer styling */
+  .navbar-drawer-light {
+    background-color: #ffffff !important; /* Use !important to override MUI default */
+    color: #5d445f;
+  }
+  
+  .navbar-drawer-dark {
+    background-color: #121212 !important; /* Use !important to override MUI default */
+    color: #cdbace;
+  }
+  
+  
