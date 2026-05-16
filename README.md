@@ -40,5 +40,8 @@ The app is deployed via GitHub Pages from the `master` branch using the Pages wo
 The workflow builds the app from `app/` and publishes `app/dist/`.
 
 ## Notes
-- The app uses `HashRouter` so routing works cleanly on GitHub Pages.
-- Static assets remain in `app/public/`, including `CNAME`, `manifest.json`, `service-worker.js`, `images/`, `icons/`, and `resume/`.
+- The app uses `BrowserRouter` for clean URLs (no `#` in paths).
+- A `404.html` is included in `app/public/` that redirects to `index.html`,
+  preserving the path so React Router can handle it client-side.
+- Static assets remain in `app/public/`, including `CNAME`, `manifest.json`,
+  `service-worker.js`, `images/`, `icons/`, and `resume/`.
