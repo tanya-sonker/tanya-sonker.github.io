@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Redirecting...</title>
+<script>
+  // If a user lands on a deep link, redirect to the hash-based route so the SPA can handle it.
+  (function () {
+    var path = location.pathname;
+    if (path && path !== '/') {
+      // preserve query and hash
+      var target = '/#' + path + location.search + location.hash;
+      location.replace(target);
+    } else {
+      location.replace('/');
+    }
+  })();
+</script>
+<p>Redirecting…</p>

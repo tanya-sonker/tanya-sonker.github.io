@@ -1,16 +1,44 @@
-# Personal Website
+# Tanya Sonker Portfolio
 
-### Stack
-HTML, CSS, JavaScript, and Bootstrap v5.3. 
-Implementing as an Angular SPA (WIP).
+This repo is now a React + TypeScript single-page app built with Vite and deployed on GitHub Pages.
 
-### Install
-Installable as a PWA through Google Chrome and Safari on iOS and Android. Converted with [Workbox](https://developer.chrome.com/docs/workbox).
+## Project structure
+- `app/src/` — React TSX application source
+- `app/public/` — static assets served by Vite
+- `app/dist/` — production build output
+- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
 
-### Deployment
-Learn more about deploying via GitHub pages and connecting to a custom domain through my Medium [article](https://medium.com/@tanyasonker/personal-website-101-for-developers-31fa6b0f500a).
+## Local development
+Use Corepack with pnpm to avoid global `pnpm` version issues.
 
-### Preview
-Find it [here](https://tanyasonker.com/).
+```bash
+corepack enable
+corepack pnpm install
+corepack pnpm dev
+```
 
-<img width="1511" alt="Screenshot 2024-01-23 at 9 14 39 PM" src="https://github.com/tanya-sonker/tanya-sonker.github.io/assets/39142854/aa6a616f-8a92-4278-9d3a-d606b012d43c">
+If `pnpm dev` fails with `ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING`, use the Corepack-managed command instead:
+
+```bash
+corepack pnpm dev
+```
+
+## Build
+
+```bash
+corepack pnpm build
+```
+
+## Preview
+
+```bash
+corepack pnpm preview
+```
+
+## Deployment
+The app is deployed via GitHub Pages from the `master` branch using the Pages workflow at `.github/workflows/pages.yml`.
+The workflow builds the app from `app/` and publishes `app/dist/`.
+
+## Notes
+- The app uses `HashRouter` so routing works cleanly on GitHub Pages.
+- Static assets remain in `app/public/`, including `CNAME`, `manifest.json`, `service-worker.js`, `images/`, `icons/`, and `resume/`.
